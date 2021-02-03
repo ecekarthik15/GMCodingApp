@@ -44,6 +44,7 @@
 		30814F2225CB526200466D9C /* GitCommitsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814F2125CB526200466D9C /* GitCommitsViewModelTests.swift */; };
 		30814F2825CB527B00466D9C /* MockGitClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814F2725CB527B00466D9C /* MockGitClient.swift */; };
 		30814F2C25CB543C00466D9C /* FakeGitClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814F2B25CB543C00466D9C /* FakeGitClient.swift */; };
+		30814F3625CB5EB900466D9C /* CommitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814F3525CB5EB900466D9C /* CommitsModel.swift */; };
 		30DED6E525CA3B51008149C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DED6E425CA3B51008149C5 /* AppDelegate.swift */; };
 		30DED6E725CA3B51008149C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DED6E625CA3B51008149C5 /* SceneDelegate.swift */; };
 		30DED6EE25CA3B53008149C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DED6ED25CA3B53008149C5 /* Assets.xcassets */; };
@@ -120,6 +121,7 @@
 		30814F2125CB526200466D9C /* GitCommitsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitCommitsViewModelTests.swift; sourceTree = "<group>"; };
 		30814F2725CB527B00466D9C /* MockGitClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGitClient.swift; sourceTree = "<group>"; };
 		30814F2B25CB543C00466D9C /* FakeGitClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeGitClient.swift; sourceTree = "<group>"; };
+		30814F3525CB5EB900466D9C /* CommitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsModel.swift; sourceTree = "<group>"; };
 		30DED6E125CA3B51008149C5 /* GMCodingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMCodingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DED6E425CA3B51008149C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30DED6E625CA3B51008149C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				30814EED25CB349B00466D9C /* CommitsResponse.swift */,
+				30814F3525CB5EB900466D9C /* CommitsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				30814EBE25CB0D7500466D9C /* Endpoint.swift in Sources */,
 				30DED6E525CA3B51008149C5 /* AppDelegate.swift in Sources */,
 				30814E9625CB05D200466D9C /* CommitsViewController.swift in Sources */,
+				30814F3625CB5EB900466D9C /* CommitsModel.swift in Sources */,
 				30DED6E725CA3B51008149C5 /* SceneDelegate.swift in Sources */,
 				30814EC925CB1D5100466D9C /* CommitsError.swift in Sources */,
 				30814E9B25CB05E000466D9C /* CommitsView.swift in Sources */,

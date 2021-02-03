@@ -49,7 +49,7 @@ class GitCommitsViewModelTests: XCTestCase {
         let subject = GitCommitsViewModel(gitClient: fakeGitClient)
         
         // When GetGitCommits called
-        var receivedResult: [Commits]?
+        var receivedResult: [CommitsModel]?
         subject.getCommits().subscribe(onNext: { result in
         receivedResult = result
         }).disposed(by: disposeBag)

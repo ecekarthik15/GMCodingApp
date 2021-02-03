@@ -9,5 +9,5 @@ import Foundation
 import RxSwift
 
 protocol GitCommitsViewModelProtocol {
-    func getCommits() -> Observable<CommitsResponse>
+    func getCommits() -> Observable<[CommitsModel]>
 }

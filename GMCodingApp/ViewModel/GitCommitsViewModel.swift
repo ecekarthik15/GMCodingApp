@@ -20,7 +20,12 @@ class GitCommitsViewModel: GitCommitsViewModelProtocol {
         self.init(gitClient: GitClient())
     }
     
-    func getCommits() -> Observable<CommitsResponse> {
-        return gitClient.getGitCommits()
+    func getCommits() -> Observable<[CommitsModel]> {
+        return gitClient.getGitCommits().map { commitsResponse ->  [CommitsModel] in
+            
+            return commitsResponse.map { commits -> CommitsModel in
+                return CommitsModel.init(author: commits.commit?.author?.name ?? "", hash: commits.sha ?? "", message: commits.commit?.message ?? "")
+            }
+        }
     }
 }
