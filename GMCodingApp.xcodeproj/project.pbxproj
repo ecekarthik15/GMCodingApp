@@ -20,6 +20,8 @@
 		30814EAC25CB067600466D9C /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30814EA325CB067600466D9C /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		30814EAD25CB067600466D9C /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30814EA425CB067600466D9C /* RxSwift.xcframework */; };
 		30814EAE25CB067600466D9C /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30814EA425CB067600466D9C /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30814EBA25CB0D4600466D9C /* NetworkClientele.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EB925CB0D4600466D9C /* NetworkClientele.swift */; };
+		30814EBE25CB0D7500466D9C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EBD25CB0D7500466D9C /* Endpoint.swift */; };
 		30DED6E525CA3B51008149C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DED6E425CA3B51008149C5 /* AppDelegate.swift */; };
 		30DED6E725CA3B51008149C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DED6E625CA3B51008149C5 /* SceneDelegate.swift */; };
 		30DED6EE25CA3B53008149C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DED6ED25CA3B53008149C5 /* Assets.xcassets */; };
@@ -72,6 +74,8 @@
 		30814EA225CB067600466D9C /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxCocoa.xcframework; path = Carthage/Build/RxCocoa.xcframework; sourceTree = "<group>"; };
 		30814EA325CB067600466D9C /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxRelay.xcframework; path = Carthage/Build/RxRelay.xcframework; sourceTree = "<group>"; };
 		30814EA425CB067600466D9C /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
+		30814EB925CB0D4600466D9C /* NetworkClientele.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientele.swift; sourceTree = "<group>"; };
+		30814EBD25CB0D7500466D9C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		30DED6E125CA3B51008149C5 /* GMCodingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMCodingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DED6E425CA3B51008149C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30DED6E625CA3B51008149C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +149,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		30814EB825CB0D1700466D9C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				30814EB925CB0D4600466D9C /* NetworkClientele.swift */,
+				30814EBD25CB0D7500466D9C /* Endpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		30DED6D825CA3B51008149C5 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +182,7 @@
 		30DED6E325CA3B51008149C5 /* GMCodingApp */ = {
 			isa = PBXGroup;
 			children = (
+				30814EB825CB0D1700466D9C /* Network */,
 				30814E8F25CB05AF00466D9C /* View */,
 				30814E8E25CB05A600466D9C /* ViewControllers */,
 				30DED6E425CA3B51008149C5 /* AppDelegate.swift */,
@@ -328,10 +342,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30814EBE25CB0D7500466D9C /* Endpoint.swift in Sources */,
 				30DED6E525CA3B51008149C5 /* AppDelegate.swift in Sources */,
 				30814E9625CB05D200466D9C /* CommitsViewController.swift in Sources */,
 				30DED6E725CA3B51008149C5 /* SceneDelegate.swift in Sources */,
 				30814E9B25CB05E000466D9C /* CommitsView.swift in Sources */,
+				30814EBA25CB0D4600466D9C /* NetworkClientele.swift in Sources */,
 				30814E9125CB05C200466D9C /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
