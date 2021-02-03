@@ -21,6 +21,6 @@ class GitCommitsViewModel: GitCommitsViewModelProtocol {
     }
     
     func getCommits() -> Observable<CommitsResponse> {
-        return .empty()
+        return gitClient.getGitCommits()
     }
 }

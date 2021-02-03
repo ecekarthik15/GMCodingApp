@@ -1,5 +1,5 @@
 //
-//  MockGitClient.swift
+//  FakeGitClient.swift
 //  GMCodingAppTests
 //
 //  Created by Karthik Kannan on 2/3/21.
@@ -10,11 +10,11 @@ import RxSwift
 
 @testable import GMCodingApp
 
-class MockGitClient: GitClientele {
+class FakeGitClient: GitClientele {
     
-    var isGetGitCommitsCalled = false
+    let getGitCommitsSubject = PublishSubject<CommitsResponse>()
+    
     func getGitCommits() -> Observable<[Commits]> {
-        isGetGitCommitsCalled = true
-        return .empty()
+        return getGitCommitsSubject.asObservable()
     }
 }
