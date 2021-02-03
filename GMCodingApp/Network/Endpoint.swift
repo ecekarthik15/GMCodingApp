@@ -25,6 +25,10 @@ enum httpmethod: String {
 }
 
 extension Endpoint {
+    var urlString: String {
+        return requestUrl?.absoluteString ?? ""
+    }
+    
     var requestUrl: URL? {
         var urlComponenets = URLComponents()
         urlComponenets.path = path

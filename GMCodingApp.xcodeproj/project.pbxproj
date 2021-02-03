@@ -31,6 +31,8 @@
 		30814EE525CB29F000466D9C /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EE425CB29F000466D9C /* MockURLSession.swift */; };
 		30814EE925CB2D3100466D9C /* MockEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EE825CB2D3100466D9C /* MockEndpoints.swift */; };
 		30814EEE25CB349B00466D9C /* CommitsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EED25CB349B00466D9C /* CommitsResponse.swift */; };
+		30814EF225CB389600466D9C /* CommitsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EF125CB389600466D9C /* CommitsEndpoint.swift */; };
+		30814EF625CB3D1F00466D9C /* CommitsEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EF525CB3D1F00466D9C /* CommitsEndpointTests.swift */; };
 		30DED6E525CA3B51008149C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DED6E425CA3B51008149C5 /* AppDelegate.swift */; };
 		30DED6E725CA3B51008149C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DED6E625CA3B51008149C5 /* SceneDelegate.swift */; };
 		30DED6EE25CA3B53008149C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DED6ED25CA3B53008149C5 /* Assets.xcassets */; };
@@ -94,6 +96,8 @@
 		30814EE425CB29F000466D9C /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		30814EE825CB2D3100466D9C /* MockEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEndpoints.swift; sourceTree = "<group>"; };
 		30814EED25CB349B00466D9C /* CommitsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsResponse.swift; sourceTree = "<group>"; };
+		30814EF125CB389600466D9C /* CommitsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsEndpoint.swift; sourceTree = "<group>"; };
+		30814EF525CB3D1F00466D9C /* CommitsEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsEndpointTests.swift; sourceTree = "<group>"; };
 		30DED6E125CA3B51008149C5 /* GMCodingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMCodingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DED6E425CA3B51008149C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30DED6E625CA3B51008149C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 				30814EBD25CB0D7500466D9C /* Endpoint.swift */,
 				30814EB925CB0D4600466D9C /* NetworkClientele.swift */,
 				30814EC125CB0E3500466D9C /* NetworkClient.swift */,
+				30814EF125CB389600466D9C /* CommitsEndpoint.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 				30DED6FB25CA3B54008149C5 /* GMCodingAppTests.swift */,
 				30DED6FD25CA3B54008149C5 /* Info.plist */,
 				30814ECE25CB1EC400466D9C /* NetworkClientTests.swift */,
+				30814EF525CB3D1F00466D9C /* CommitsEndpointTests.swift */,
 			);
 			path = GMCodingAppTests;
 			sourceTree = "<group>";
@@ -410,6 +416,7 @@
 				30814EDD25CB24E800466D9C /* Result+Value.swift in Sources */,
 				30814EBA25CB0D4600466D9C /* NetworkClientele.swift in Sources */,
 				30814E9125CB05C200466D9C /* BaseViewController.swift in Sources */,
+				30814EF225CB389600466D9C /* CommitsEndpoint.swift in Sources */,
 				30814EC225CB0E3500466D9C /* NetworkClient.swift in Sources */,
 				30814EEE25CB349B00466D9C /* CommitsResponse.swift in Sources */,
 			);
@@ -420,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30814ED625CB23EE00466D9C /* MockGenericCodableResponse.swift in Sources */,
+				30814EF625CB3D1F00466D9C /* CommitsEndpointTests.swift in Sources */,
 				30814EE125CB264E00466D9C /* FakeURLResponse.swift in Sources */,
 				30814EE925CB2D3100466D9C /* MockEndpoints.swift in Sources */,
 				30DED6FC25CA3B54008149C5 /* GMCodingAppTests.swift in Sources */,
