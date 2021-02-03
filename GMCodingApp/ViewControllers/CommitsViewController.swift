@@ -37,8 +37,10 @@ class CommitsViewController: BaseViewController<CommitsView>, UITableViewDataSou
             self.commitsArray = commits
         })
         .observe(on: MainScheduler.instance)
-        .subscribe(onNext: { [rootView] _ in
-            rootView.commitsTableView.reloadData()
+        .subscribe(onNext: { [weak self] _ in
+            guard let self = self else { return }
+            self.title = "Commits(\(self.commitsArray.count))"
+            self.rootView.commitsTableView.reloadData()
         }).disposed(by: disposeBag)
     }
     
