@@ -37,6 +37,8 @@
 		30814EFE25CB40F000466D9C /* GitClientele.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EFD25CB40F000466D9C /* GitClientele.swift */; };
 		30814F0225CB434000466D9C /* GitClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814F0125CB434000466D9C /* GitClientTests.swift */; };
 		30814F0625CB43A700466D9C /* MockNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814F0525CB43A700466D9C /* MockNetworkClient.swift */; };
+		30814F0E25CB460300466D9C /* FakeNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814F0D25CB460300466D9C /* FakeNetworkClient.swift */; };
+		30814F1325CB4E6A00466D9C /* GitCommitsJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814F1225CB4E6A00466D9C /* GitCommitsJson.swift */; };
 		30DED6E525CA3B51008149C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DED6E425CA3B51008149C5 /* AppDelegate.swift */; };
 		30DED6E725CA3B51008149C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DED6E625CA3B51008149C5 /* SceneDelegate.swift */; };
 		30DED6EE25CA3B53008149C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DED6ED25CA3B53008149C5 /* Assets.xcassets */; };
@@ -106,6 +108,8 @@
 		30814EFD25CB40F000466D9C /* GitClientele.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitClientele.swift; sourceTree = "<group>"; };
 		30814F0125CB434000466D9C /* GitClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitClientTests.swift; sourceTree = "<group>"; };
 		30814F0525CB43A700466D9C /* MockNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkClient.swift; sourceTree = "<group>"; };
+		30814F0D25CB460300466D9C /* FakeNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkClient.swift; sourceTree = "<group>"; };
+		30814F1225CB4E6A00466D9C /* GitCommitsJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitCommitsJson.swift; sourceTree = "<group>"; };
 		30DED6E125CA3B51008149C5 /* GMCodingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMCodingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DED6E425CA3B51008149C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30DED6E625CA3B51008149C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,11 +187,11 @@
 			isa = PBXGroup;
 			children = (
 				30814EBD25CB0D7500466D9C /* Endpoint.swift */,
-				30814EB925CB0D4600466D9C /* NetworkClientele.swift */,
-				30814EC125CB0E3500466D9C /* NetworkClient.swift */,
 				30814EF125CB389600466D9C /* CommitsEndpoint.swift */,
-				30814EF925CB40CC00466D9C /* GitClient.swift */,
+				30814EB925CB0D4600466D9C /* NetworkClientele.swift */,
 				30814EFD25CB40F000466D9C /* GitClientele.swift */,
+				30814EC125CB0E3500466D9C /* NetworkClient.swift */,
+				30814EF925CB40CC00466D9C /* GitClient.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -203,11 +207,13 @@
 		30814ED425CB23CD00466D9C /* TestDoubles */ = {
 			isa = PBXGroup;
 			children = (
+				30814F1125CB4E3700466D9C /* Json Mocks */,
 				30814ED525CB23EE00466D9C /* MockGenericCodableResponse.swift */,
 				30814EE025CB264E00466D9C /* FakeURLResponse.swift */,
 				30814EE425CB29F000466D9C /* MockURLSession.swift */,
 				30814EE825CB2D3100466D9C /* MockEndpoints.swift */,
 				30814F0525CB43A700466D9C /* MockNetworkClient.swift */,
+				30814F0D25CB460300466D9C /* FakeNetworkClient.swift */,
 			);
 			path = TestDoubles;
 			sourceTree = "<group>";
@@ -226,6 +232,14 @@
 				30814EED25CB349B00466D9C /* CommitsResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		30814F1125CB4E3700466D9C /* Json Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				30814F1225CB4E6A00466D9C /* GitCommitsJson.swift */,
+			);
+			path = "Json Mocks";
 			sourceTree = "<group>";
 		};
 		30DED6D825CA3B51008149C5 = {
@@ -442,6 +456,8 @@
 			files = (
 				30814ED625CB23EE00466D9C /* MockGenericCodableResponse.swift in Sources */,
 				30814EF625CB3D1F00466D9C /* CommitsEndpointTests.swift in Sources */,
+				30814F0E25CB460300466D9C /* FakeNetworkClient.swift in Sources */,
+				30814F1325CB4E6A00466D9C /* GitCommitsJson.swift in Sources */,
 				30814EE125CB264E00466D9C /* FakeURLResponse.swift in Sources */,
 				30814EE925CB2D3100466D9C /* MockEndpoints.swift in Sources */,
 				30DED6FC25CA3B54008149C5 /* GMCodingAppTests.swift in Sources */,

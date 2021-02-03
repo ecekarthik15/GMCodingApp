@@ -21,6 +21,26 @@ class GitClient: GitClientele {
     }
     
     func getGitCommits() -> Observable<[Commits]> {
-        return .empty()
+        return Observable.create { [weak self] observer in
+            let disposable = Disposables.create()
+            guard let strongSelf = self else {
+                observer.onCompleted()
+                return disposable
+            }
+            let endpoint = CommitsEndpoint.getCommits
+            strongSelf.networkClient.makeRequest(endPoint: endpoint, completion: { (response, data, error) in
+                guard let strongSelf = self else { return }
+                let result: Result<CommitsResponse, CommitsError> = strongSelf.networkClient.getResponse(response: response, data: data, error: error)
+                switch result {
+                case .success(let model):
+                    observer.onNext(model)
+                    observer.onCompleted()
+                case .failure(let error):
+                    observer.onError(error)
+                }
+            })
+            
+            return disposable
+        }
     }
 }
