@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = scene as? UIWindowScene else { return }
         let window = UIWindow(windowScene: windowScene)
-        let viewController = CommitsViewController()
+        let viewController = CommitsViewController(gitCommitsViewModel: GitCommitsViewModel())
         let navigationViewController = UINavigationController.init(rootViewController: viewController)
         window.rootViewController = navigationViewController
         self.window = window

@@ -6,10 +6,15 @@
 //
 
 import Foundation
+import RxSwift
 
 class CommitsViewController: BaseViewController<CommitsView> {
     
-    init() {
+    private let disposeBag = DisposeBag()
+    private let gitCommitsViewModel: GitCommitsViewModelProtocol
+    
+    init(gitCommitsViewModel: GitCommitsViewModelProtocol) {
+        self.gitCommitsViewModel = gitCommitsViewModel
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -20,5 +25,7 @@ class CommitsViewController: BaseViewController<CommitsView> {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Commits"
+        
+        gitCommitsViewModel.getCommits().subscribe().disposed(by: disposeBag)
     }
 }
