@@ -11,12 +11,8 @@ import UIKit
 class CommitsCell: UITableViewCell {
     
     lazy var cView: UIView = {
-        let stackview = UIView()
-        stackview.layer.cornerRadius = 2
-        stackview.layer.borderWidth = 1
-        stackview.clipsToBounds = true
-        stackview.layer.borderColor = UIColor.black.cgColor
-        return stackview
+        let view = UIView()
+        return view
     }()
     
     lazy var vStackView: UIStackView = {

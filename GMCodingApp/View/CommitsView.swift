@@ -13,7 +13,7 @@ class CommitsView: UIView {
         let tableView = UITableView()
         tableView.isUserInteractionEnabled = true
         tableView.accessibilityIdentifier = "commits.tableview"
-        tableView.separatorStyle = .none
+        tableView.separatorStyle = .singleLine
         return tableView
     }()
 
