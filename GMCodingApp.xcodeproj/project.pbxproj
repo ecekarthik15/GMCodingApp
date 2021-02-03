@@ -30,6 +30,7 @@
 		30814EE125CB264E00466D9C /* FakeURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EE025CB264E00466D9C /* FakeURLResponse.swift */; };
 		30814EE525CB29F000466D9C /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EE425CB29F000466D9C /* MockURLSession.swift */; };
 		30814EE925CB2D3100466D9C /* MockEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EE825CB2D3100466D9C /* MockEndpoints.swift */; };
+		30814EEE25CB349B00466D9C /* CommitsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EED25CB349B00466D9C /* CommitsResponse.swift */; };
 		30DED6E525CA3B51008149C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DED6E425CA3B51008149C5 /* AppDelegate.swift */; };
 		30DED6E725CA3B51008149C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DED6E625CA3B51008149C5 /* SceneDelegate.swift */; };
 		30DED6EE25CA3B53008149C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DED6ED25CA3B53008149C5 /* Assets.xcassets */; };
@@ -92,6 +93,7 @@
 		30814EE025CB264E00466D9C /* FakeURLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeURLResponse.swift; sourceTree = "<group>"; };
 		30814EE425CB29F000466D9C /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		30814EE825CB2D3100466D9C /* MockEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEndpoints.swift; sourceTree = "<group>"; };
+		30814EED25CB349B00466D9C /* CommitsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsResponse.swift; sourceTree = "<group>"; };
 		30DED6E125CA3B51008149C5 /* GMCodingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMCodingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DED6E425CA3B51008149C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30DED6E625CA3B51008149C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +204,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		30814EEC25CB346800466D9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30814EED25CB349B00466D9C /* CommitsResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		30DED6D825CA3B51008149C5 = {
 			isa = PBXGroup;
 			children = (
@@ -226,11 +236,12 @@
 		30DED6E325CA3B51008149C5 /* GMCodingApp */ = {
 			isa = PBXGroup;
 			children = (
-				30814EC725CB1D2C00466D9C /* Error */,
-				30814EB825CB0D1700466D9C /* Network */,
-				30814E8F25CB05AF00466D9C /* View */,
 				30814E8E25CB05A600466D9C /* ViewControllers */,
+				30814E8F25CB05AF00466D9C /* View */,
+				30814EEC25CB346800466D9C /* Model */,
+				30814EB825CB0D1700466D9C /* Network */,
 				30814EDB25CB24C800466D9C /* Extensions */,
+				30814EC725CB1D2C00466D9C /* Error */,
 				30DED6E425CA3B51008149C5 /* AppDelegate.swift */,
 				30DED6E625CA3B51008149C5 /* SceneDelegate.swift */,
 				30DED6ED25CA3B53008149C5 /* Assets.xcassets */,
@@ -400,6 +411,7 @@
 				30814EBA25CB0D4600466D9C /* NetworkClientele.swift in Sources */,
 				30814E9125CB05C200466D9C /* BaseViewController.swift in Sources */,
 				30814EC225CB0E3500466D9C /* NetworkClient.swift in Sources */,
+				30814EEE25CB349B00466D9C /* CommitsResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
