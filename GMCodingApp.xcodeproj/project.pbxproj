@@ -22,6 +22,14 @@
 		30814EAE25CB067600466D9C /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30814EA425CB067600466D9C /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		30814EBA25CB0D4600466D9C /* NetworkClientele.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EB925CB0D4600466D9C /* NetworkClientele.swift */; };
 		30814EBE25CB0D7500466D9C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EBD25CB0D7500466D9C /* Endpoint.swift */; };
+		30814EC225CB0E3500466D9C /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EC125CB0E3500466D9C /* NetworkClient.swift */; };
+		30814EC925CB1D5100466D9C /* CommitsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EC825CB1D5100466D9C /* CommitsError.swift */; };
+		30814ECF25CB1EC400466D9C /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814ECE25CB1EC400466D9C /* NetworkClientTests.swift */; };
+		30814ED625CB23EE00466D9C /* MockGenericCodableResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814ED525CB23EE00466D9C /* MockGenericCodableResponse.swift */; };
+		30814EDD25CB24E800466D9C /* Result+Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EDC25CB24E800466D9C /* Result+Value.swift */; };
+		30814EE125CB264E00466D9C /* FakeURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EE025CB264E00466D9C /* FakeURLResponse.swift */; };
+		30814EE525CB29F000466D9C /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EE425CB29F000466D9C /* MockURLSession.swift */; };
+		30814EE925CB2D3100466D9C /* MockEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814EE825CB2D3100466D9C /* MockEndpoints.swift */; };
 		30DED6E525CA3B51008149C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DED6E425CA3B51008149C5 /* AppDelegate.swift */; };
 		30DED6E725CA3B51008149C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DED6E625CA3B51008149C5 /* SceneDelegate.swift */; };
 		30DED6EE25CA3B53008149C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DED6ED25CA3B53008149C5 /* Assets.xcassets */; };
@@ -76,6 +84,14 @@
 		30814EA425CB067600466D9C /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
 		30814EB925CB0D4600466D9C /* NetworkClientele.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientele.swift; sourceTree = "<group>"; };
 		30814EBD25CB0D7500466D9C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		30814EC125CB0E3500466D9C /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		30814EC825CB1D5100466D9C /* CommitsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsError.swift; sourceTree = "<group>"; };
+		30814ECE25CB1EC400466D9C /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
+		30814ED525CB23EE00466D9C /* MockGenericCodableResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGenericCodableResponse.swift; sourceTree = "<group>"; };
+		30814EDC25CB24E800466D9C /* Result+Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Value.swift"; sourceTree = "<group>"; };
+		30814EE025CB264E00466D9C /* FakeURLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeURLResponse.swift; sourceTree = "<group>"; };
+		30814EE425CB29F000466D9C /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		30814EE825CB2D3100466D9C /* MockEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEndpoints.swift; sourceTree = "<group>"; };
 		30DED6E125CA3B51008149C5 /* GMCodingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMCodingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DED6E425CA3B51008149C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30DED6E625CA3B51008149C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,10 +168,38 @@
 		30814EB825CB0D1700466D9C /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				30814EB925CB0D4600466D9C /* NetworkClientele.swift */,
 				30814EBD25CB0D7500466D9C /* Endpoint.swift */,
+				30814EB925CB0D4600466D9C /* NetworkClientele.swift */,
+				30814EC125CB0E3500466D9C /* NetworkClient.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		30814EC725CB1D2C00466D9C /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				30814EC825CB1D5100466D9C /* CommitsError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		30814ED425CB23CD00466D9C /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				30814ED525CB23EE00466D9C /* MockGenericCodableResponse.swift */,
+				30814EE025CB264E00466D9C /* FakeURLResponse.swift */,
+				30814EE425CB29F000466D9C /* MockURLSession.swift */,
+				30814EE825CB2D3100466D9C /* MockEndpoints.swift */,
+			);
+			path = TestDoubles;
+			sourceTree = "<group>";
+		};
+		30814EDB25CB24C800466D9C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				30814EDC25CB24E800466D9C /* Result+Value.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		30DED6D825CA3B51008149C5 = {
@@ -182,9 +226,11 @@
 		30DED6E325CA3B51008149C5 /* GMCodingApp */ = {
 			isa = PBXGroup;
 			children = (
+				30814EC725CB1D2C00466D9C /* Error */,
 				30814EB825CB0D1700466D9C /* Network */,
 				30814E8F25CB05AF00466D9C /* View */,
 				30814E8E25CB05A600466D9C /* ViewControllers */,
+				30814EDB25CB24C800466D9C /* Extensions */,
 				30DED6E425CA3B51008149C5 /* AppDelegate.swift */,
 				30DED6E625CA3B51008149C5 /* SceneDelegate.swift */,
 				30DED6ED25CA3B53008149C5 /* Assets.xcassets */,
@@ -197,8 +243,10 @@
 		30DED6FA25CA3B54008149C5 /* GMCodingAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				30814ED425CB23CD00466D9C /* TestDoubles */,
 				30DED6FB25CA3B54008149C5 /* GMCodingAppTests.swift */,
 				30DED6FD25CA3B54008149C5 /* Info.plist */,
+				30814ECE25CB1EC400466D9C /* NetworkClientTests.swift */,
 			);
 			path = GMCodingAppTests;
 			sourceTree = "<group>";
@@ -346,9 +394,12 @@
 				30DED6E525CA3B51008149C5 /* AppDelegate.swift in Sources */,
 				30814E9625CB05D200466D9C /* CommitsViewController.swift in Sources */,
 				30DED6E725CA3B51008149C5 /* SceneDelegate.swift in Sources */,
+				30814EC925CB1D5100466D9C /* CommitsError.swift in Sources */,
 				30814E9B25CB05E000466D9C /* CommitsView.swift in Sources */,
+				30814EDD25CB24E800466D9C /* Result+Value.swift in Sources */,
 				30814EBA25CB0D4600466D9C /* NetworkClientele.swift in Sources */,
 				30814E9125CB05C200466D9C /* BaseViewController.swift in Sources */,
+				30814EC225CB0E3500466D9C /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +407,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30814ED625CB23EE00466D9C /* MockGenericCodableResponse.swift in Sources */,
+				30814EE125CB264E00466D9C /* FakeURLResponse.swift in Sources */,
+				30814EE925CB2D3100466D9C /* MockEndpoints.swift in Sources */,
 				30DED6FC25CA3B54008149C5 /* GMCodingAppTests.swift in Sources */,
+				30814EE525CB29F000466D9C /* MockURLSession.swift in Sources */,
+				30814ECF25CB1EC400466D9C /* NetworkClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
