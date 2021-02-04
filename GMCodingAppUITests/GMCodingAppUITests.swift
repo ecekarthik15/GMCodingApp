@@ -31,6 +31,17 @@ class GMCodingAppUITests: XCTestCase {
         _ = waitForElementToAppear(CommitsAccessIdentifiers.commitsMessageLabel)
         
         _ = waitForElementToAppear(CommitsAccessIdentifiers.commitsAuthorLabel)
+        
+        CommitsAccessIdentifiers.commitsFirstCell!.tap()
+        
+        _ = waitForElementToAppear(CommitsAccessIdentifiers.commitsDetailShaLabel)
+        
+        _ = waitForElementToAppear(CommitsAccessIdentifiers.commitsDetailMessageLabel)
+        
+        _ = waitForElementToAppear(CommitsAccessIdentifiers.commitsDetailNameLabel)
+        
+        _ = waitForElementToAppear(CommitsAccessIdentifiers.commitsDetailDateLabel)
+        
     }
     
     func waitForElementToAppear(_ element: XCUIElement, timeout: TimeInterval = 5) -> Bool {
