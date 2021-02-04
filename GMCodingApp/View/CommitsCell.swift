@@ -92,8 +92,8 @@ class CommitsCell: UITableViewCell {
     }
     
     func configureData(commit: CommitsModel) {
-        shaLabel.text = commit.hash
-        messageLabel.text = commit.message
-        authorLabel.text = commit.author
+        shaLabel.text = commit.hash ?? "NA"
+        messageLabel.text = commit.message ?? "NA"
+        authorLabel.text = commit.author?.name ?? "NA"
     }
 }

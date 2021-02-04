@@ -62,4 +62,10 @@ extension CommitsViewController {
         cell.configureData(commit: commit)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let commitsModel = commitsArray[indexPath.row]
+        let vc = CommitsDetailsViewController(commitsModel: commitsModel)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

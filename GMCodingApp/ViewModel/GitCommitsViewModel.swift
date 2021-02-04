@@ -26,9 +26,9 @@ class GitCommitsViewModel: GitCommitsViewModelProtocol {
                 
                 return commitsResponse
                     .map { commits -> CommitsModel in
-                        return CommitsModel(author: commits.commit?.author?.name ?? "",
-                                            hash: commits.sha ?? "",
-                                            message: commits.commit?.message ?? "")
+                        return CommitsModel(author: commits.commit?.author,
+                                            hash: commits.sha,
+                                            message: commits.commit?.message)
                     }
             }
     }

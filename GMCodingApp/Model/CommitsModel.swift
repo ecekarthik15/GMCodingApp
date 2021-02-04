@@ -8,7 +8,7 @@
 import Foundation
 
 struct CommitsModel {
-    let author: String
-    let hash: String
-    let message: String
+    let author: CommitAuthor?
+    let hash: String?
+    let message: String?
 }
