@@ -62,6 +62,8 @@
 		309DDD4425CB9A3B00AC8C03 /* XCUIApplication+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DDD4325CB9A3B00AC8C03 /* XCUIApplication+Utility.swift */; };
 		309DDD4825CB9A5400AC8C03 /* UITestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DDD4725CB9A5400AC8C03 /* UITestHelpers.swift */; };
 		309DDD4C25CB9A7A00AC8C03 /* CommitsAccessIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DDD4B25CB9A7A00AC8C03 /* CommitsAccessIdentifiers.swift */; };
+		309DDD5225CBA4C200AC8C03 /* CommitsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DDD5125CBA4C200AC8C03 /* CommitsDetailsViewController.swift */; };
+		309DDD5625CBA52600AC8C03 /* CommitsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DDD5525CBA52600AC8C03 /* CommitsDetailView.swift */; };
 		30DED6E525CA3B51008149C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DED6E425CA3B51008149C5 /* AppDelegate.swift */; };
 		30DED6E725CA3B51008149C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DED6E625CA3B51008149C5 /* SceneDelegate.swift */; };
 		30DED6EE25CA3B53008149C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DED6ED25CA3B53008149C5 /* Assets.xcassets */; };
@@ -155,6 +157,8 @@
 		309DDD4325CB9A3B00AC8C03 /* XCUIApplication+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+Utility.swift"; sourceTree = "<group>"; };
 		309DDD4725CB9A5400AC8C03 /* UITestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestHelpers.swift; sourceTree = "<group>"; };
 		309DDD4B25CB9A7A00AC8C03 /* CommitsAccessIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsAccessIdentifiers.swift; sourceTree = "<group>"; };
+		309DDD5125CBA4C200AC8C03 /* CommitsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsDetailsViewController.swift; sourceTree = "<group>"; };
+		309DDD5525CBA52600AC8C03 /* CommitsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsDetailView.swift; sourceTree = "<group>"; };
 		30DED6E125CA3B51008149C5 /* GMCodingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMCodingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DED6E425CA3B51008149C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30DED6E625CA3B51008149C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -249,6 +253,7 @@
 			children = (
 				30814E9025CB05C200466D9C /* BaseViewController.swift */,
 				30814E9525CB05D200466D9C /* CommitsViewController.swift */,
+				309DDD5125CBA4C200AC8C03 /* CommitsDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 			children = (
 				30814E9A25CB05E000466D9C /* CommitsView.swift */,
 				30814F3925CB614C00466D9C /* CommitsCell.swift */,
+				309DDD5525CBA52600AC8C03 /* CommitsDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -543,6 +549,7 @@
 				30271C0225CB938400A9D4E8 /* Appdelegate+Utility.swift in Sources */,
 				30271C0C25CB943500A9D4E8 /* UIMockJSONDataValuesModel.swift in Sources */,
 				30814EBE25CB0D7500466D9C /* Endpoint.swift in Sources */,
+				309DDD5225CBA4C200AC8C03 /* CommitsDetailsViewController.swift in Sources */,
 				30DED6E525CA3B51008149C5 /* AppDelegate.swift in Sources */,
 				30814E9625CB05D200466D9C /* CommitsViewController.swift in Sources */,
 				30271C0625CB938400A9D4E8 /* UIApplication+Utility.swift in Sources */,
@@ -555,6 +562,7 @@
 				30814F3A25CB614C00466D9C /* CommitsCell.swift in Sources */,
 				30814E9B25CB05E000466D9C /* CommitsView.swift in Sources */,
 				30271C0525CB938400A9D4E8 /* URL+Utility.swift in Sources */,
+				309DDD5625CBA52600AC8C03 /* CommitsDetailView.swift in Sources */,
 				30814EDD25CB24E800466D9C /* Result+Value.swift in Sources */,
 				30271C0425CB938400A9D4E8 /* Optional+Utility.swift in Sources */,
 				30814EBA25CB0D4600466D9C /* NetworkClientele.swift in Sources */,
