@@ -47,6 +47,7 @@ extension Endpoint {
             request.httpBody = body
         }
         request.httpMethod = method.rawValue
+        
         return request
     }
 }

@@ -54,7 +54,6 @@
 		30DED6E725CA3B51008149C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DED6E625CA3B51008149C5 /* SceneDelegate.swift */; };
 		30DED6EE25CA3B53008149C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DED6ED25CA3B53008149C5 /* Assets.xcassets */; };
 		30DED6F125CA3B53008149C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DED6EF25CA3B53008149C5 /* LaunchScreen.storyboard */; };
-		30DED6FC25CA3B54008149C5 /* GMCodingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DED6FB25CA3B54008149C5 /* GMCodingAppTests.swift */; };
 		30DED70725CA3B54008149C5 /* GMCodingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DED70625CA3B54008149C5 /* GMCodingAppUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -139,7 +138,6 @@
 		30DED6F025CA3B53008149C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30DED6F225CA3B53008149C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30DED6F725CA3B54008149C5 /* GMCodingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMCodingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		30DED6FB25CA3B54008149C5 /* GMCodingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMCodingAppTests.swift; sourceTree = "<group>"; };
 		30DED6FD25CA3B54008149C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30DED70225CA3B54008149C5 /* GMCodingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMCodingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DED70625CA3B54008149C5 /* GMCodingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMCodingAppUITests.swift; sourceTree = "<group>"; };
@@ -177,6 +175,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30271BF625CB8E9D00A9D4E8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				30814EE825CB2D3100466D9C /* MockEndpoints.swift */,
+				30814F2725CB527B00466D9C /* MockGitClient.swift */,
+				30814F0525CB43A700466D9C /* MockNetworkClient.swift */,
+				30814EE425CB29F000466D9C /* MockURLSession.swift */,
+				30814ED525CB23EE00466D9C /* MockGenericCodableResponse.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		30271BF725CB8EA600A9D4E8 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				30814F2B25CB543C00466D9C /* FakeGitClient.swift */,
+				30271BEC25CB8A6500A9D4E8 /* FakeGitCommitsViewModel.swift */,
+				30814F0D25CB460300466D9C /* FakeNetworkClient.swift */,
+				30814EE025CB264E00466D9C /* FakeURLResponse.swift */,
+			);
+			path = Fakes;
+			sourceTree = "<group>";
+		};
 		30814E8E25CB05A600466D9C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,16 +252,9 @@
 		30814ED425CB23CD00466D9C /* TestDoubles */ = {
 			isa = PBXGroup;
 			children = (
+				30271BF625CB8E9D00A9D4E8 /* Mocks */,
+				30271BF725CB8EA600A9D4E8 /* Fakes */,
 				30814F1125CB4E3700466D9C /* Json Mocks */,
-				30814ED525CB23EE00466D9C /* MockGenericCodableResponse.swift */,
-				30814EE025CB264E00466D9C /* FakeURLResponse.swift */,
-				30814EE425CB29F000466D9C /* MockURLSession.swift */,
-				30814EE825CB2D3100466D9C /* MockEndpoints.swift */,
-				30814F0525CB43A700466D9C /* MockNetworkClient.swift */,
-				30814F0D25CB460300466D9C /* FakeNetworkClient.swift */,
-				30814F2725CB527B00466D9C /* MockGitClient.swift */,
-				30271BEC25CB8A6500A9D4E8 /* FakeGitCommitsViewModel.swift */,
-				30814F2B25CB543C00466D9C /* FakeGitClient.swift */,
 			);
 			path = TestDoubles;
 			sourceTree = "<group>";
@@ -323,7 +337,6 @@
 		30DED6FA25CA3B54008149C5 /* GMCodingAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				30DED6FB25CA3B54008149C5 /* GMCodingAppTests.swift */,
 				30814ECE25CB1EC400466D9C /* NetworkClientTests.swift */,
 				30814EF525CB3D1F00466D9C /* CommitsEndpointTests.swift */,
 				30814F0125CB434000466D9C /* GitClientTests.swift */,
@@ -508,7 +521,6 @@
 				30271BE125CB879500A9D4E8 /* CommitsViewControllerSnapShotTests.swift in Sources */,
 				30271BED25CB8A6500A9D4E8 /* FakeGitCommitsViewModel.swift in Sources */,
 				30814EE925CB2D3100466D9C /* MockEndpoints.swift in Sources */,
-				30DED6FC25CA3B54008149C5 /* GMCodingAppTests.swift in Sources */,
 				30814F0225CB434000466D9C /* GitClientTests.swift in Sources */,
 				30814F2225CB526200466D9C /* GitCommitsViewModelTests.swift in Sources */,
 				30814EE525CB29F000466D9C /* MockURLSession.swift in Sources */,

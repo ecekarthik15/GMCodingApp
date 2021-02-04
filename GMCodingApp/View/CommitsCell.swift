@@ -83,7 +83,6 @@ class CommitsCell: UITableViewCell {
             make.bottom.equalToSuperview().inset(5)
             make.leading.equalToSuperview().offset(5)
             make.trailing.equalToSuperview().inset(5)
-            
         }
         
         vStackView.snp.makeConstraints { make in

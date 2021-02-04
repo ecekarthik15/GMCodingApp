@@ -24,7 +24,7 @@ class NetworkClient: NetworkClientele {
         session.dataTask(with: request) { data, response, error in
             print("error: \(error.debugDescription)")
             completion(response, data, error)
-            }.resume()
+        }.resume()
     }
     
     func getResponse<T>(response: URLReponseProtocol?, data: Data?, error: Error?) -> Result<T, CommitsError> where T : Decodable, T : Encodable {

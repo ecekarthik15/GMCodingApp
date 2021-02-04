@@ -21,13 +21,15 @@ class GitCommitsViewModel: GitCommitsViewModelProtocol {
     }
     
     func getCommits() -> Observable<[CommitsModel]> {
-        return gitClient.getGitCommits().map { commitsResponse ->  [CommitsModel] in
-            
-            return commitsResponse.map { commits -> CommitsModel in
-                return CommitsModel(author: commits.commit?.author?.name ?? "",
-                                    hash: commits.sha ?? "",
-                                    message: commits.commit?.message ?? "")
+        return gitClient.getGitCommits()
+            .map { commitsResponse ->  [CommitsModel] in
+                
+                return commitsResponse
+                    .map { commits -> CommitsModel in
+                        return CommitsModel(author: commits.commit?.author?.name ?? "",
+                                            hash: commits.sha ?? "",
+                                            message: commits.commit?.message ?? "")
+                    }
             }
-        }
     }
 }
