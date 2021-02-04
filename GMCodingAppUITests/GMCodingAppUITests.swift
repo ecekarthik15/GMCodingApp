@@ -22,21 +22,23 @@ class GMCodingAppUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testDealsView() {
+        App.shared.sendCollection(fileNames: ["CommitsCollection"], launchState: .install)
+        _ = waitForElementToAppear(CommitsAccessIdentifiers.commitsFirstCell!)
+        
+        _ = waitForElementToAppear(CommitsAccessIdentifiers.commitsShaLabel)
+        
+        _ = waitForElementToAppear(CommitsAccessIdentifiers.commitsMessageLabel)
+        
+        _ = waitForElementToAppear(CommitsAccessIdentifiers.commitsAuthorLabel)
     }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+    
+    func waitForElementToAppear(_ element: XCUIElement, timeout: TimeInterval = 5) -> Bool {
+        let predicate = NSPredicate(format: "exists == true")
+        let expectation = XCTNSPredicateExpectation(predicate: predicate,
+                                                    object: element)
+        
+        let result = XCTWaiter().wait(for: [expectation], timeout: timeout)
+        return result == .completed
     }
 }
