@@ -11,6 +11,14 @@
 		30271BDD25CB874000A9D4E8 /* SnapshotTesting.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30271BD925CB872600A9D4E8 /* SnapshotTesting.xcframework */; };
 		30271BE125CB879500A9D4E8 /* CommitsViewControllerSnapShotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30271BE025CB879500A9D4E8 /* CommitsViewControllerSnapShotTests.swift */; };
 		30271BED25CB8A6500A9D4E8 /* FakeGitCommitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30271BEC25CB8A6500A9D4E8 /* FakeGitCommitsViewModel.swift */; };
+		30271C0225CB938400A9D4E8 /* Appdelegate+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30271BFB25CB938400A9D4E8 /* Appdelegate+Utility.swift */; };
+		30271C0325CB938400A9D4E8 /* Array+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30271BFC25CB938400A9D4E8 /* Array+Utility.swift */; };
+		30271C0425CB938400A9D4E8 /* Optional+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30271BFD25CB938400A9D4E8 /* Optional+Utility.swift */; };
+		30271C0525CB938400A9D4E8 /* URL+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30271BFE25CB938400A9D4E8 /* URL+Utility.swift */; };
+		30271C0625CB938400A9D4E8 /* UIApplication+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30271BFF25CB938400A9D4E8 /* UIApplication+Utility.swift */; };
+		30271C0725CB938400A9D4E8 /* URLSessionConfiguration+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30271C0025CB938400A9D4E8 /* URLSessionConfiguration+Swizzling.swift */; };
+		30271C0825CB938400A9D4E8 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30271C0125CB938400A9D4E8 /* URLProtocolMock.swift */; };
+		30271C0C25CB943500A9D4E8 /* UIMockJSONDataValuesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30271C0B25CB943500A9D4E8 /* UIMockJSONDataValuesModel.swift */; };
 		30814E9125CB05C200466D9C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814E9025CB05C200466D9C /* BaseViewController.swift */; };
 		30814E9625CB05D200466D9C /* CommitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814E9525CB05D200466D9C /* CommitsViewController.swift */; };
 		30814E9B25CB05E000466D9C /* CommitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814E9A25CB05E000466D9C /* CommitsView.swift */; };
@@ -97,6 +105,14 @@
 		30271BD925CB872600A9D4E8 /* SnapshotTesting.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SnapshotTesting.xcframework; path = Carthage/Build/SnapshotTesting.xcframework; sourceTree = "<group>"; };
 		30271BE025CB879500A9D4E8 /* CommitsViewControllerSnapShotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsViewControllerSnapShotTests.swift; sourceTree = "<group>"; };
 		30271BEC25CB8A6500A9D4E8 /* FakeGitCommitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeGitCommitsViewModel.swift; sourceTree = "<group>"; };
+		30271BFB25CB938400A9D4E8 /* Appdelegate+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Appdelegate+Utility.swift"; sourceTree = "<group>"; };
+		30271BFC25CB938400A9D4E8 /* Array+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Utility.swift"; sourceTree = "<group>"; };
+		30271BFD25CB938400A9D4E8 /* Optional+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Utility.swift"; sourceTree = "<group>"; };
+		30271BFE25CB938400A9D4E8 /* URL+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Utility.swift"; sourceTree = "<group>"; };
+		30271BFF25CB938400A9D4E8 /* UIApplication+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Utility.swift"; sourceTree = "<group>"; };
+		30271C0025CB938400A9D4E8 /* URLSessionConfiguration+Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Swizzling.swift"; sourceTree = "<group>"; };
+		30271C0125CB938400A9D4E8 /* URLProtocolMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
+		30271C0B25CB943500A9D4E8 /* UIMockJSONDataValuesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMockJSONDataValuesModel.swift; sourceTree = "<group>"; };
 		30814E9025CB05C200466D9C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		30814E9525CB05D200466D9C /* CommitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsViewController.swift; sourceTree = "<group>"; };
 		30814E9A25CB05E000466D9C /* CommitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsView.swift; sourceTree = "<group>"; };
@@ -198,6 +214,20 @@
 			path = Fakes;
 			sourceTree = "<group>";
 		};
+		30271BFA25CB931D00A9D4E8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				30271BFB25CB938400A9D4E8 /* Appdelegate+Utility.swift */,
+				30271BFC25CB938400A9D4E8 /* Array+Utility.swift */,
+				30271BFD25CB938400A9D4E8 /* Optional+Utility.swift */,
+				30271BFF25CB938400A9D4E8 /* UIApplication+Utility.swift */,
+				30271BFE25CB938400A9D4E8 /* URL+Utility.swift */,
+				30271C0125CB938400A9D4E8 /* URLProtocolMock.swift */,
+				30271C0025CB938400A9D4E8 /* URLSessionConfiguration+Swizzling.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		30814E8E25CB05A600466D9C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +302,7 @@
 			children = (
 				30814EED25CB349B00466D9C /* CommitsResponse.swift */,
 				30814F3525CB5EB900466D9C /* CommitsModel.swift */,
+				30271C0B25CB943500A9D4E8 /* UIMockJSONDataValuesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,6 +356,7 @@
 				30814EB825CB0D1700466D9C /* Network */,
 				30814EDB25CB24C800466D9C /* Extensions */,
 				30814EC725CB1D2C00466D9C /* Error */,
+				30271BFA25CB931D00A9D4E8 /* Utility */,
 				30DED6E425CA3B51008149C5 /* AppDelegate.swift */,
 				30DED6E625CA3B51008149C5 /* SceneDelegate.swift */,
 				30DED6ED25CA3B53008149C5 /* Assets.xcassets */,
@@ -487,15 +519,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30271C0225CB938400A9D4E8 /* Appdelegate+Utility.swift in Sources */,
+				30271C0C25CB943500A9D4E8 /* UIMockJSONDataValuesModel.swift in Sources */,
 				30814EBE25CB0D7500466D9C /* Endpoint.swift in Sources */,
 				30DED6E525CA3B51008149C5 /* AppDelegate.swift in Sources */,
 				30814E9625CB05D200466D9C /* CommitsViewController.swift in Sources */,
+				30271C0625CB938400A9D4E8 /* UIApplication+Utility.swift in Sources */,
+				30271C0825CB938400A9D4E8 /* URLProtocolMock.swift in Sources */,
+				30271C0725CB938400A9D4E8 /* URLSessionConfiguration+Swizzling.swift in Sources */,
+				30271C0325CB938400A9D4E8 /* Array+Utility.swift in Sources */,
 				30814F3625CB5EB900466D9C /* CommitsModel.swift in Sources */,
 				30DED6E725CA3B51008149C5 /* SceneDelegate.swift in Sources */,
 				30814EC925CB1D5100466D9C /* CommitsError.swift in Sources */,
 				30814F3A25CB614C00466D9C /* CommitsCell.swift in Sources */,
 				30814E9B25CB05E000466D9C /* CommitsView.swift in Sources */,
+				30271C0525CB938400A9D4E8 /* URL+Utility.swift in Sources */,
 				30814EDD25CB24E800466D9C /* Result+Value.swift in Sources */,
+				30271C0425CB938400A9D4E8 /* Optional+Utility.swift in Sources */,
 				30814EBA25CB0D4600466D9C /* NetworkClientele.swift in Sources */,
 				30814F1A25CB510500466D9C /* GitCommitsViewModel.swift in Sources */,
 				30814EFE25CB40F000466D9C /* GitClientele.swift in Sources */,
