@@ -19,8 +19,10 @@ class CommitsViewControllerSnapShotTests: XCTestCase {
     }
 
     func testDealsViewController() {
-        let commit = CommitsModel(author: "Test", hash: "123", message: "test")
-        let commit2 = CommitsModel(author: "Test2", hash: "1234", message: "test2")
+        let author1 = CommitAuthor(name:"Test" , email: "email1", date: "date1")
+        let commit = CommitsModel(author: author1, hash: "123", message: "test")
+        let author2 = CommitAuthor(name:"Test2" , email: "email2", date: "date2")
+        let commit2 = CommitsModel(author: author2, hash: "1234", message: "test2")
         
         let nc = UINavigationController(rootViewController: subject)
         nc.pushViewController(subject, animated: true)
