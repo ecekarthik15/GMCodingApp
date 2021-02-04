@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30271BDA25CB872600A9D4E8 /* SnapshotTesting.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30271BD925CB872600A9D4E8 /* SnapshotTesting.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30271BDD25CB874000A9D4E8 /* SnapshotTesting.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30271BD925CB872600A9D4E8 /* SnapshotTesting.xcframework */; };
+		30271BE125CB879500A9D4E8 /* CommitsViewControllerSnapShotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30271BE025CB879500A9D4E8 /* CommitsViewControllerSnapShotTests.swift */; };
+		30271BED25CB8A6500A9D4E8 /* FakeGitCommitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30271BEC25CB8A6500A9D4E8 /* FakeGitCommitsViewModel.swift */; };
 		30814E9125CB05C200466D9C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814E9025CB05C200466D9C /* BaseViewController.swift */; };
 		30814E9625CB05D200466D9C /* CommitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814E9525CB05D200466D9C /* CommitsViewController.swift */; };
 		30814E9B25CB05E000466D9C /* CommitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814E9A25CB05E000466D9C /* CommitsView.swift */; };
@@ -78,6 +82,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				30271BDA25CB872600A9D4E8 /* SnapshotTesting.xcframework in Embed Frameworks */,
 				30814EAE25CB067600466D9C /* RxSwift.xcframework in Embed Frameworks */,
 				30814EA825CB067600466D9C /* RxBlocking.xcframework in Embed Frameworks */,
 				30814EAC25CB067600466D9C /* RxRelay.xcframework in Embed Frameworks */,
@@ -90,6 +95,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		30271BD925CB872600A9D4E8 /* SnapshotTesting.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SnapshotTesting.xcframework; path = Carthage/Build/SnapshotTesting.xcframework; sourceTree = "<group>"; };
+		30271BE025CB879500A9D4E8 /* CommitsViewControllerSnapShotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsViewControllerSnapShotTests.swift; sourceTree = "<group>"; };
+		30271BEC25CB8A6500A9D4E8 /* FakeGitCommitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeGitCommitsViewModel.swift; sourceTree = "<group>"; };
 		30814E9025CB05C200466D9C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		30814E9525CB05D200466D9C /* CommitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsViewController.swift; sourceTree = "<group>"; };
 		30814E9A25CB05E000466D9C /* CommitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsView.swift; sourceTree = "<group>"; };
@@ -155,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30271BDD25CB874000A9D4E8 /* SnapshotTesting.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +239,7 @@
 				30814F0525CB43A700466D9C /* MockNetworkClient.swift */,
 				30814F0D25CB460300466D9C /* FakeNetworkClient.swift */,
 				30814F2725CB527B00466D9C /* MockGitClient.swift */,
+				30271BEC25CB8A6500A9D4E8 /* FakeGitCommitsViewModel.swift */,
 				30814F2B25CB543C00466D9C /* FakeGitClient.swift */,
 			);
 			path = TestDoubles;
@@ -272,6 +282,7 @@
 		30DED6D825CA3B51008149C5 = {
 			isa = PBXGroup;
 			children = (
+				30271BD925CB872600A9D4E8 /* SnapshotTesting.xcframework */,
 				30DED6E325CA3B51008149C5 /* GMCodingApp */,
 				30DED6FA25CA3B54008149C5 /* GMCodingAppTests */,
 				30DED70525CA3B54008149C5 /* GMCodingAppUITests */,
@@ -317,6 +328,7 @@
 				30814EF525CB3D1F00466D9C /* CommitsEndpointTests.swift */,
 				30814F0125CB434000466D9C /* GitClientTests.swift */,
 				30814F2125CB526200466D9C /* GitCommitsViewModelTests.swift */,
+				30271BE025CB879500A9D4E8 /* CommitsViewControllerSnapShotTests.swift */,
 				30814ED425CB23CD00466D9C /* TestDoubles */,
 				30DED6FD25CA3B54008149C5 /* Info.plist */,
 			);
@@ -493,6 +505,8 @@
 				30814F1325CB4E6A00466D9C /* GitCommitsJson.swift in Sources */,
 				30814F2825CB527B00466D9C /* MockGitClient.swift in Sources */,
 				30814EE125CB264E00466D9C /* FakeURLResponse.swift in Sources */,
+				30271BE125CB879500A9D4E8 /* CommitsViewControllerSnapShotTests.swift in Sources */,
+				30271BED25CB8A6500A9D4E8 /* FakeGitCommitsViewModel.swift in Sources */,
 				30814EE925CB2D3100466D9C /* MockEndpoints.swift in Sources */,
 				30DED6FC25CA3B54008149C5 /* GMCodingAppTests.swift in Sources */,
 				30814F0225CB434000466D9C /* GitClientTests.swift in Sources */,
